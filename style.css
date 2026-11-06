@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #fff0f5, #fce0eb, #f7cddd);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 45px 40px;
+    border-radius: 22px;
+    text-align: center;
+    box-shadow: 0 15px 45px rgba(190, 80, 125, 0.13);
+    border: 1px solid #fff5f8;
+}
+
+.top-label {
+    color: #d16b96;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+.icon {
+    width: 85px;
+    height: 85px;
+    background: #ffe5ef;
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+    margin: 0 auto 25px;
+}
+
+h1 {
+    color: #a83e6b;
+    font-size: 29px;
+    margin-bottom: 15px;
+}
+
+.description {
+    color: #a47c8d;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.feature {
+    background: #fff6f9;
+    border: 1px solid #f8dce7;
+    border-radius: 12px;
+    padding: 15px 10px;
+    flex: 1;
+}
+
+.feature span {
+    font-size: 25px;
+}
+
+.feature p {
+    color: #b65b80;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+button {
+    background: linear-gradient(135deg, #e88bad, #cc5e88);
+    color: white;
+    border: none;
+    padding: 16px 25px;
+    width: 100%;
+    max-width: 320px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button span {
+    margin-left: 10px;
+    font-size: 19px;
+}
+
+button:hover {
+    background: #b94773;
+    transform: translateY(-3px);
+    box-shadow: 0 7px 18px rgba(204, 94, 136, 0.25);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+.note {
+    color: #b99aa8;
+    font-size: 12px;
+    margin-top: 22px;
+}
+
+footer {
+    text-align: center;
+    color: #aa7b90;
+    font-size: 12px;
+    margin-top: 22px;
+}
+
+@media (max-width: 500px) {
+    .card {
+        padding: 35px 20px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    .features {
+        gap: 7px;
+    }
+
+    .feature p {
+        font-size: 10px;
+    }
+}
